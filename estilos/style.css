@@ -1,0 +1,399 @@
+/* Estilo para NovaWear */
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* ENCABEZADO */
+.main-header {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  border-bottom: 2px solid #f8c146;
+}
+
+/* SECCIÓN HERO */
+.hero {
+  background: linear-gradient(to right, #f8c146, #f4a261);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #fff;
+  color: #222;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #f8f8f8;
+  transform: scale(1.05);
+}
+
+/* PRODUCTOS DESTACADOS */
+.destacados {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.destacados h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.producto {
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CATÁLOGO */
+.catalogo-main {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.catalogo-main h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.producto-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.producto-card:hover {
+  transform: translateY(-5px);
+}
+
+.producto-imagen img {
+  width: 100%;
+  display: block;
+}
+
+.producto-info {
+  padding: 1rem;
+  text-align: left;
+}
+
+.producto-nombre {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.producto-descripcion {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.producto-precio {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #d97706;
+  margin-top: 0.5rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 1rem 2rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+/* Sección Nosotros */
+.nosotros-main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Hero */
+.nosotros-hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(to right, #f8c146, #f4a261);
+  color: #fff;
+  border-radius: 0 0 20px 20px;
+}
+
+.nosotros-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.nosotros-hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+/* Valores (Misión, Visión, Valores) */
+.valores {
+  background-color: #fffef5;
+  padding: 3rem 2rem;
+}
+
+.valores-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.valor-card {
+  background-color: #fff;
+  padding: 2rem;
+  flex: 1 1 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.valor-card h2 {
+  color: #8a4b00;
+  margin-bottom: 1rem;
+}
+
+.valor-card p,
+.valor-card ul {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Historia */
+.historia {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: linear-gradient(to right, #fff3cd, #ffeeba);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.historia h2 {
+  color: #8a4b00;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.historia p {
+  color: #5c3d00;
+  font-size: 1.1rem;
+}
+
+/* Testimonios */
+.testimonios {
+  background-color: #fffbea;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.testimonios h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #8a4b00;
+}
+
+.testimonios-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.testimonio {
+  background-color: #fff;
+  border-left: 6px solid #f8c146;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  max-width: 320px;
+  position: relative;
+}
+
+.testimonio::before {
+  content: "❝";
+  font-size: 3rem;
+  color: #f8c146;
+  position: absolute;
+  top: -20px;
+  left: 10px;
+}
+
+.testimonio p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.testimonio strong {
+  color: #8a4b00;
+}
+
+.faq-main {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  font-family: 'Outfit', sans-serif;
+  color: #222;
+}
+
+.faq-main h1 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: #f8c146;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.faq-item {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(248, 193, 70, 0.2);
+  overflow: hidden;
+  border: 1.5px solid #f8c146;
+}
+
+.faq-question {
+  width: 100%;
+  background: #fff8e1;
+  border: none;
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b36f00;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #f4a261;
+  color: white;
+}
+
+.faq-icon {
+  font-size: 1.6rem;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  padding: 0 1.5rem;
+  background-color: #fff8e1;
+  color: #555;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.faq-answer p {
+  margin: 1rem 0;
+}
+
+.faq-hero {
+  background: linear-gradient(to right, #f8c146, #f4a261);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  border-radius: 0 0 10px 10px;
+}
+
+.faq-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.faq-hero p {
+  font-size: 1.2rem;
+  margin: 0;
+}
