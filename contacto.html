@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto | NovaWear</title>
+  <link rel="stylesheet" href="estilos/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">NovaWear</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contacto-hero">
+    <h1>Contáctanos</h1>
+    <p>¿Tienes dudas o sugerencias? Estamos aquí para ayudarte.</p>
+  </section>
+
+  <main class="contacto-main">
+    <div class="contacto-formulario">
+      <form action="#" method="post">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Enviar mensaje</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NovaWear. Todos los derechos reservados.</p>
+    <p>Desarrollado por Diego Andrés Leiva Palma</p>
+  </footer>
+</body>
+</html>
