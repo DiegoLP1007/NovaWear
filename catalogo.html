@@ -22,43 +22,77 @@
     </nav>
   </header>
 
-  <main class="catalogo-main">
-    <h1>Catálogo de Productos</h1>
-    <section class="productos-grid">
-      
-      <article class="producto-card">
-        <div class="producto-imagen">
-          <img src="images/camisetaNovaWear.png" alt="Camiseta NovaFit" />
-        </div>
-        <div class="producto-info">
-          <h3 class="producto-nombre">Camiseta NovaFit</h3>
-          <p class="producto-descripcion">Ligera, fresca y perfecta para entrenar.</p>
-          <p class="producto-precio">Q 200.00</p>
-        </div>
-      </article>
+<main class="catalogo-main">
+  <section class="catalogo-hero">
+    <div class="hero-contenido">
+      <h1>Catálogo de Productos</h1>
+      <p>Explora nuestras prendas deportivas y casuales para todos los estilos.</p>
+    </div>
+  </section>
 
-      <article class="producto-card">
-        <div class="producto-imagen">
-          <img src="images/sudadera casual.jpeg" alt="Hoodie Urban" />
-        </div>
-        <div class="producto-info">
-          <h3 class="producto-nombre">Hoodie Urban</h3>
-          <p class="producto-descripcion">Diseño moderno para tus días casuales.</p>
-          <p class="producto-precio">Q 320.00</p>
-        </div>
-      </article>
+    <!-- Submenú de categorías -->
+    <nav class="catalogo-submenu">
+      <h2>Categorías:</h2>
+      <ul>
+        <li><button onclick="mostrarCategoria('hombres')">Hombres</button></li>
+        <li><button onclick="mostrarCategoria('mujeres')">Mujeres</button></li>
+      </ul>
+    </nav>
 
-      <article class="producto-card">
-        <div class="producto-imagen">
-          <img src="images/tennis NovaWear.jpeg" alt="Tenis NovaRun" />
-        </div>
-        <div class="producto-info">
-          <h3 class="producto-nombre">Tenis NovaRun</h3>
-          <p class="producto-descripcion">Confort y estilo para cada paso.</p>
-          <p class="producto-precio">Q 480.00</p>
-        </div>
-      </article>
+    <!-- Hombres -->
+    <section class="productos-categoria" id="hombres">
+      <h2>Ropa para Hombres</h2>
+      <div class="productos-grid">
+        <article class="producto-card">
+          <div class="producto-imagen">
+            <img src="images/camisetaNovaWear.png" alt="Camiseta NovaFit" />
+          </div>
+          <div class="producto-info">
+            <h3 class="producto-nombre">Camiseta NovaFit</h3>
+            <p class="producto-descripcion">Ligera, fresca y perfecta para entrenar.</p>
+            <p class="producto-precio">Q 200.00</p>
+          </div>
+        </article>
 
+        <article class="producto-card">
+          <div class="producto-imagen">
+            <img src="images/sudadero ejercicio.jpg" alt="Sudadera Negra">
+          </div>
+          <div class="producto-info">
+            <h3 class="producto-nombre">Sudadera Negra</h3>
+            <p class="producto-descripcion">Ideal para tus rutinas deportivas.</p>
+            <p class="producto-precio">Q 215.00</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Mujeres -->
+    <section class="productos-categoria" id="mujeres" style="display: none;">
+      <h2>Ropa para Mujeres</h2>
+      <div class="productos-grid">
+        <article class="producto-card">
+          <div class="producto-imagen">
+            <img src="images/sudadera casual.jpeg" alt="Hoodie Urban" />
+          </div>
+          <div class="producto-info">
+            <h3 class="producto-nombre">Hoodie Urban</h3>
+            <p class="producto-descripcion">Diseño moderno para tus días casuales.</p>
+            <p class="producto-precio">Q 320.00</p>
+          </div>
+        </article>
+
+        <article class="producto-card">
+          <div class="producto-imagen">
+            <img src="images/tennis NovaWear.jpeg" alt="Tenis NovaRun" />
+          </div>
+          <div class="producto-info">
+            <h3 class="producto-nombre">Tenis NovaRun</h3>
+            <p class="producto-descripcion">Confort y estilo para cada paso.</p>
+            <p class="producto-precio">Q 480.00</p>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
 
@@ -66,5 +100,15 @@
     <p>&copy; 2025 NovaWear. Todos los derechos reservados.</p>
     <p>Desarrollado por Diego Andrés Leiva Palma</p>
   </footer>
+
+  <!-- SCRIPT para mostrar solo una categoría -->
+  <script>
+    function mostrarCategoria(categoria) {
+      document.getElementById("hombres").style.display = "none";
+      document.getElementById("mujeres").style.display = "none";
+
+      document.getElementById(categoria).style.display = "block";
+    }
+  </script>
 </body>
 </html>
