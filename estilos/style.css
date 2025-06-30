@@ -557,3 +557,50 @@ html, body {
   flex: 1;
 }
 
+/* Estilo nuevo para catalogo */
+.catalogo-submenu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.catalogo-submenu button {
+  background-color: #fff3e0;
+  color: #d97706;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.catalogo-submenu button:hover {
+  background-color: #f8c146;
+  color: #000;
+}
+
+.catalogo-hero {
+  width: 100%;
+  background: linear-gradient(to right, #f8c146, #f4a261);
+  color: white;
+  padding: 4rem 2rem;
+  margin: 0;
+  text-align: center;
+}
+
+.catalogo-hero .hero-contenido {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.catalogo-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.catalogo-hero p {
+  font-size: 1.2rem;
+}
