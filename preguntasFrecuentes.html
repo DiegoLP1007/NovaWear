@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Preguntas Frecuentes | NovaWear</title>
+  <link rel="stylesheet" href="estilos/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">NovaWear</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="faq.html" class="active">Preguntas Frecuentes</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección hero estilo preguntas frecuentes -->
+  <section class="faq-hero">
+    <h1>Preguntas Frecuentes</h1>
+    <p>Resuelve tus dudas rápidamente</p>
+  </section>
+
+  <main class="faq-main">
+    <div class="faq-container">
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>¿Cuáles son los métodos de pago aceptados?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Aceptamos tarjetas de crédito, débito y pagos vía PayPal.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>¿Hacen envíos a todo Guatemala?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Sí, realizamos envíos a todo el país con costos según la zona.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>¿Cuál es el tiempo de entrega?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>El tiempo promedio de entrega es de 3 a 5 días hábiles.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>¿Puedo cambiar o devolver un producto?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Sí, tienes 15 días para solicitar cambios o devoluciones con el producto en buen estado.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NovaWear. Todos los derechos reservados.</p>
+    <p style="margin-top: 0.5rem;">Desarrollado por Diego Andrés Leiva Palma</p>
+  </footer>
+
+  <script>
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(button => {
+      button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        const icon = button.querySelector('.faq-icon');
+        if (answer.style.maxHeight) {
+          answer.style.maxHeight = null;
+          icon.textContent = '+';
+        } else {
+          document.querySelectorAll('.faq-answer').forEach(ans => ans.style.maxHeight = null);
+          document.querySelectorAll('.faq-icon').forEach(ic => ic.textContent = '+');
+          answer.style.maxHeight = answer.scrollHeight + "px";
+          icon.textContent = '−';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
