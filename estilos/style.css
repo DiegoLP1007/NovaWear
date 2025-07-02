@@ -127,27 +127,44 @@ main {
 
 .productos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
+  justify-items: center;
 }
 
 .producto-card {
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 280px;
 }
+
 
 .producto-card:hover {
   transform: translateY(-5px);
 }
 
+.producto-imagen {
+  width: 100%;
+  height: 200px; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
 .producto-imagen img {
   width: 100%;
+  height: 230px;
+  object-fit: cover;
   display: block;
 }
+
 
 .producto-info {
   padding: 1rem;
@@ -603,4 +620,43 @@ html, body {
 
 .catalogo-hero p {
   font-size: 1.2rem;
+}
+
+.catalogo-submenu {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.catalogo-submenu h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.catalogo-submenu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.catalogo-submenu button {
+  padding: 0.6rem 1.2rem;
+  background-color: #f4a261;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.catalogo-submenu button:hover {
+  background-color: #e76f51;
+  transform: scale(1.05);
+}
+
+.catalogo-submenu button.active {
+  background-color: #264653;
 }
